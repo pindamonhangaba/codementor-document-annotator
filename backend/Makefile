@@ -23,12 +23,12 @@ zod-clear:
 
 zod:
 	go run main.go openapi
-	npx openapi-zod-client -a .\api.json -o ..\frontend\packages\core-lib\src\api\zodios\api.ts
+	npx openapi-zod-client -a .\api.json -o ..\frontend\admin\src\api\zodios\api.ts
 	$(MAKE) zod-clear
 
 zod-api:
 	go run main.go openapi
-	npx openapi-zod-client -a .\api.json -o ..\frontend\packages\core-lib\src\api\zodios\api.ts
+	npx openapi-zod-client -a .\api.json -o ..\frontend\admin\src\api\zodios\api.ts
 	$(MAKE) zod-clear
 
 
